@@ -25,9 +25,11 @@ namespace PierresBakery.Models
         int remainder1 = (((BreadCost - 1)/3)*10)+5;
         return remainder1; 
       }
-       else {
-        return BreadCost = 5;
-      }
+       else
+      {
+        int remainder2 = ((BreadCost+1)/3)*10;
+        return remainder2;
+      } 
     }
   }
   // public class Pastry
