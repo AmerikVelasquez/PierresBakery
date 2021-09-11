@@ -45,6 +45,12 @@ namespace PierresBakery.TestTools
       Pastry testPastry = new Pastry(1);
       Assert.AreEqual(2, testPastry.price(1));
     }
+    [TestMethod]
+    public void Pastry_ReturnPriceIfModulo0_true()
+    {
+      Pastry testPastry = new Pastry(3);
+      Assert.AreEqual(5, testPastry.price(3));
+    }
   }
 }
 
