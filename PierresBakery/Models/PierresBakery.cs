@@ -12,9 +12,16 @@ namespace PierresBakery.Models
       BreadCost = breadCost;
     }
 
-    public int price(int breadCost)
+    public int price(int BreadCost)
     {
-     return BreadCost = 5;
+      int breadPay = BreadCost % 3;
+      if(breadPay == 0)
+      {
+        int remainder0 = (BreadCost/3)*10;
+        return remainder0;
+      } else {
+        return BreadCost = 5;
+      }
     }
   }
   // public class Pastry
