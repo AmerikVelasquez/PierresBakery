@@ -18,7 +18,7 @@ namespace PierresBakery
       string pastryOrder = Console.ReadLine();
       int pastryCost = int.Parse(pastryOrder);
       Pastry pastryPrice = new Pastry(pastryCost);
-      int totalCost = breadFinal + pastryFinal;
+      int totalCost = breadOrder.BreadFinal + pastryPrice.PastryFinal;
       Console.WriteLine("The total cost for the items you have chosen is" + totalCost + "dollars");
     }
   }
