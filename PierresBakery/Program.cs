@@ -27,9 +27,9 @@ namespace PierresBakery
 
       int totalCost = breadOrder.Price + pastryOrder.Price;
       Console.WriteLine("The total cost for the items you have chosen is" + "" + totalCost + "" + "dollars");
-      Console.WriteLine("Would you like to Change or continue your order? enter y or n");
-      string response = Console.Readline();
-      if(response = y) 
+      Console.WriteLine("Would you like to Change or continue your order? enter yes or n");
+      string response = Console.ReadLine();
+      if(response == "yes") 
       {
         Main();
       } else 
